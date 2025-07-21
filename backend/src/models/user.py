@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 
 from fastapi_users.db import SQLAlchemyBaseUserTableUUID
 from sqlalchemy.orm import Mapped
@@ -9,6 +9,6 @@ class User(SQLAlchemyBaseUserTableUUID, Base):
     first_name: Mapped[str]
     last_name: Mapped[str]
     sex: Mapped[str]
-    birthdate: Mapped[datetime]
+    birthdate: Mapped[datetime.date]
     pass
 
