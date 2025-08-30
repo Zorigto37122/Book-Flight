@@ -26,7 +26,7 @@ export default function Login() {
                 }
             );
             message.success('Успешный вход!');
-            navigate('/dashboard');
+            navigate('/');
         } catch (err) {
             console.error(err.response?.data);
             message.error(err.response?.data?.detail || 'Ошибка входа');
